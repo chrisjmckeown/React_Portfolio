@@ -15,24 +15,26 @@ header .navbar-brand{
     font-family: 'Palatino', 'URW Palladio L', serif;
 }
 main{
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-main .primary{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 80px;
     background-color: white;
     width: 600px;
     padding: 30px;
 }
 main h1{
-    padding-left: 15px;
+    padding-left: 5px;
     color: teal;
     font-size: 70px;
     font-weight: 800;
     font-family: 'Palatino', 'URW Palladio L', serif;
 }
-main img {
+main img form {
     float: left;
     margin-right:15px;
+}
+main form {
+    margin-left:15px;
 }
 
 main .col-md-6{
@@ -70,23 +72,20 @@ form .btn-primary:hover {
     height: 7px;
 }
 
+.footer h2 {
+    font-size: 20px;
+    padding-top: 12px;
+}
+
 @media(max-width:768px) {
-    body{
-        background-color: red;
+    main{
+        margin-left: 40px;
     }
 }
 
  @media(max-width:400px) {
-    body{
-        background-color: rgb(235, 235, 235);
-    }
-    main .primary{
-         background-color: white;
-         width: 100%;
-         padding: 30px;
-    }
-    footer h2 {
-        font-size: 20px;
-        padding-top: 12px;
+    main{
+        margin-left: 0px;
+        width: 100%;
     }
 }
