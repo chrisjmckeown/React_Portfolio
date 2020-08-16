@@ -1,6 +1,11 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
 body{
     background-color: rgb(235, 235, 235);
     height: 100%;
+    margin-bottom: 60px; 
 }
 header .navbar-brand{
     background-color: teal;
@@ -9,9 +14,9 @@ header .navbar-brand{
     font-weight: 800;
     font-family: 'Palatino', 'URW Palladio L', serif;
 }
-
 main{
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 main .primary{
     background-color: white;
@@ -34,54 +39,54 @@ main .col-md-6{
     margin-bottom: 20px;
 }
 
-footer {
-    position: fixed;
+form .btn-primary,
+form .btn-primary:active,
+form .btn-primary:visited {
+    border-radius: 0;
+    background-color: teal;
+}
+
+form .btn-primary:hover {
+    background-color: rgb(2, 66, 66);
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+}
+
+.footer {
+    position: absolute;
     bottom: 0;
     width: 100%;
-    height: 80px;
-    line-height: 100px;
+    height: 60px; 
+    line-height: 60px; 
     background-color: rgb(102, 102, 102);
     color:  rgb(108, 117, 125);
-}
-footer .green {
-    background-color: teal;
-    height: 10px;
-}
-footer .gray {
-    background-color: rgb(102, 102, 102);
-    padding: 15px 0;
     text-align: center;
 }
-
-@media screen and (max-width: 768px) {
-    body {
-      background-color: red;
-    }
-    header .navbar-brand{
-        background-color: red;
-        color: #fff !important;
-        font-size: 40px;
-        font-weight: 800;
-        font-family: 'Palatino', 'URW Palladio L', serif;
-    }
-  
-    /* .wrapper {
-      width: 100%;
-      padding: 20px;
-    }
-    
-    #main-content,
-    #sidebar {
-      width: 100%;
-    }
-    #sidebar {
-      margin-top: 40px;
-    } */
+.footer .green {
+    background-color: teal;
+    height: 7px;
 }
 
-@media screen and (max-width: 400px) {
-    /* The body's bg color will be #333 */
-    body {
-      background-color: #333;
+@media(max-width:768px) {
+    body{
+        background-color: red;
+    }
+}
+
+ @media(max-width:400px) {
+    body{
+        background-color: rgb(235, 235, 235);
+    }
+    main .primary{
+         background-color: white;
+         width: 100%;
+         padding: 30px;
+    }
+    footer h2 {
+        font-size: 20px;
+        padding-top: 12px;
     }
 }
