@@ -10,6 +10,11 @@
 ## Description
 * Assignment number two. 
 * Week number 2 of 24.
+* Please find link here: https://chrisjmckeown.github.io/BC_Week_02_CSS_and_Bootstrap_Responsive/
+
+<img src="Assets/Images/About Me.jpg" alt="About Me" width="600">
+<img src="Assets/Images/Portfolio.jpg" alt="Portfolio" width="600">
+<img src="Assets/Images/Contact.jpg" alt="Contact" width="600">
 
 The task set (outlined in full below) was to put our knowledge of bootstrap and responsive websites to the test. 
 
