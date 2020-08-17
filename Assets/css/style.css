@@ -4,8 +4,11 @@ html {
 }
 body{
     background-color: rgb(235, 235, 235);
-    height: 100%;
+    width: 100%;
     margin-bottom: 60px; 
+    background-image: url("/Assets/Images/people.jpg");
+    background-blend-mode: overlay;
+    background-repeat: repeat;
 }
 header .navbar-brand{
     background-color: teal;
