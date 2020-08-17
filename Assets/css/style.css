@@ -6,7 +6,7 @@ body{
     background-color: rgb(235, 235, 235);
     width: 100%;
     margin-bottom: 60px; 
-    background-image: url("/Assets/Images/people.jpg");
+    background-image: url("../Images/people.jpg");
     background-blend-mode: overlay;
     background-repeat: repeat;
 }
