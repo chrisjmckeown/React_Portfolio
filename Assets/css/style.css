@@ -5,8 +5,8 @@ html {
 }
 /* setting body background */
 body{
-    background-color: rgb(235, 235, 235);
     width: 100%;
+    background-color: rgb(235, 235, 235);
     background-image: url("../Images/people.jpg");
     background-blend-mode: overlay;
     background-repeat: repeat;
@@ -20,14 +20,6 @@ header .navbar-brand{
     font-family: 'Palatino', 'URW Palladio L', serif;
 }
 /* setting main styles */
-main{
-    margin-top: 80px;
-    margin-bottom: 140px;  /* 80 + 60 for sticky footer height */
-    margin-left: 80px;
-    background-color: white;
-    width: 600px;
-    padding: 30px;
-}
 main h1{
     padding-left: 5px;
     color: teal;
@@ -35,16 +27,35 @@ main h1{
     font-weight: 800;
     font-family: 'Palatino', 'URW Palladio L', serif;
 }
-main img form {
+main img {
     float: left;
     margin-right:15px;
+    margin-bottom:15px;
 }
+
+/* setting form styles */
 main form {
     margin-left:15px;
 }
 
-main .col-md-6{
-    margin-bottom: 20px;
+/* setting main container, lable and body styles */
+main .container{
+    /*80 top */
+    margin-top: 80px; 
+    /*80 left, locking the container to the left to reduce the bouncing around, personal choice */
+    margin-left: 80px; 
+    /*80 top and bottom. 80 + 60 = 140 for sticky footer height  */
+    margin-bottom: 140px; 
+}
+main .label{
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+main .body{
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
 }
 
 /* overriding contact button */
@@ -54,7 +65,6 @@ form .btn-primary:visited {
     border-radius: 0;
     background-color: teal;
 }
-
 form .btn-primary:hover {
     background-color: rgb(2, 66, 66);
     transition: all 1s ease;
@@ -77,30 +87,38 @@ form .btn-primary:hover {
 }
 .footer .green {
     background-color: teal;
-    height: 7px;
+    height: 5px;
 }
-
 .footer h2 {
     font-size: 20px;
-    padding-top: 12px;
+    padding-top: 13px;
 }
 
 /* media query for 768 and smaller screens */
 /* reducing margins */
 @media(max-width:768px) {
-    main{
-        
-        margin-top: 40px;
-        margin-bottom: 100px;  /* 40 + 60 for sticky footer height  */
-        margin-left: 40px;
+    main .container{
+        /*40 top */
+        margin-top: 40px; 
+        /*40 left, locking the container to the left to reduce the bouncing around, personal choice */
+        margin-left: 40px; 
+        /*40 top and bottom. 40 + 60 = 100 for sticky footer height  */
+        margin-bottom: 100px; 
+        /* forcing width to be 400 to remove white space to the right */
+        width: 400px;
     }
 }
 
 /* media query for 400 and smaller screens */
+/* Removing margin and setting width to full screen */
 @media(max-width:400px) {
-    main{
-        /* Removing margin and setting width to full screen */
-        margin-left: 0px;
+    main .container{
+        /*20 top */
+        margin-top: 20px; 
+        /*0 left, locking the container to the left to reduce the bouncing around, personal choice */
+        margin-left: 0px; 
+        /*20 top and bottom. 20 + 60 = 80 for sticky footer height  */
+        margin-bottom: 80px; 
         width: 100%;
     }
 }
