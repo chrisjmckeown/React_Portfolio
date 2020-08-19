@@ -10,7 +10,7 @@
 ## Description
 * Assignment number two. 
 * Week number 2 of 24.
-* Please find link here: https://chrisjmckeown.github.io/BC_Week_02_CSS_and_Bootstrap_Responsive/
+* Please find link here: <a href="https://chrisjmckeown.github.io/BC_Week_02_CSS_and_Bootstrap_Responsive/" target="_blank">BC Week 02 CSS and Bootstrap Responsive</a>
 
 The task set (outlined in full below) was to put our knowledge of bootstrap and responsive websites to the test. We were provides a series of images; About Me, Portfolio, and Contact pages to replicate. They must also respond to various device widths, 992, 768 and 400.
 

@@ -27,10 +27,10 @@ main h1{
     font-weight: 800;
     font-family: 'Palatino', 'URW Palladio L', serif;
 }
-main img {
+main .contactImage {
     float: left;
-    margin-right:15px;
-    margin-bottom:15px;
+    margin-right:10px;
+    margin-bottom:10px;
 }
 
 /* setting form styles */
@@ -104,8 +104,6 @@ form .btn-primary:hover {
         margin-left: 40px; 
         /*40 top and bottom. 40 + 60 = 100 for sticky footer height  */
         margin-bottom: 100px; 
-        /* forcing width to be 400 to remove white space to the right */
-        width: 400px;
     }
 }
 
