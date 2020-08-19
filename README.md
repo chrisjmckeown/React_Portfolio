@@ -14,20 +14,11 @@
 
 The task set (outlined in full below) was to put our knowledge of bootstrap and responsive websites to the test. We were provides a series of images; About Me, Portfolio, and Contact pages to replicate. They must also respond to various device widths, 992, 768 and 400.
 
-### 992 wide screens and wider
-<img src="Assets/Images/992-index.png" alt="About Me 992" width="150" vertical-align="text-top" style="vertical-align:top">
-<img src="Assets/Images/992-portfolio.png" alt="Portfolio 992" width="150" vertical-align="text-top" style="vertical-align:top">
-<img src="Assets/Images/992-contact.png" alt="Contact 992" width="150" vertical-align="text-top" style="vertical-align:top">
-
-### 768 wide screens and wider
-<img src="Assets/Images/768-index.png" alt="About Me 768" width="100" vertical-align="text-top" style="vertical-align:top">
-<img src="Assets/Images/768-portfolio.png" alt="Portfolio 768" width="100" vertical-align="text-top" style="vertical-align:top">
-<img src="Assets/Images/768-contact.png" alt="Contact 768" width="100" vertical-align="text-top" style="vertical-align:top">
-
-### 400 wide screens and wider
-<img src="Assets/Images/400-index.png" alt="About Me 400" width="50" vertical-align="text-top" style="vertical-align:top">
-<img src="Assets/Images/400-portfolio.png" alt="Portfolio 400" width="50" vertical-align="text-top" style="vertical-align:top">
-<img src="Assets/Images/400-contact.png" alt="Contact 400" width="50" vertical-align="text-top" style="vertical-align:top">
+| 992 wide screens and wider  | 768 wide screens and wider | 400 wide screens and wider |
+| ------------- | ------------- | ------------- |
+| <img src="Assets/Images/992-index.png" alt="About Me 992" width="150" vertical-align="text-top" style="vertical-align:top">  | <img src="Assets/Images/768-index.png" alt="About Me 768" width="100" vertical-align="text-top" style="vertical-align:top">  | <img src="Assets/Images/400-index.png" alt="About Me 400" width="50" vertical-align="text-top" style="vertical-align:top">  |
+| <img src="Assets/Images/992-portfolio.png" alt="Portfolio 992" width="150" vertical-align="text-top" style="vertical-align:top">  | <img src="Assets/Images/768-portfolio.png" alt="Portfolio 768" width="100" vertical-align="text-top" style="vertical-align:top">  | <img src="Assets/Images/400-portfolio.png" alt="Portfolio 400" width="50" vertical-align="text-top" style="vertical-align:top">  |
+| <img src="Assets/Images/992-contact.png" alt="Contact 992" width="150" vertical-align="text-top" style="vertical-align:top">  | <img src="Assets/Images/768-contact.png" alt="Contact 768" width="100" vertical-align="text-top" style="vertical-align:top">  | <img src="Assets/Images/400-contact.png" alt="Contact 400" width="50" vertical-align="text-top" style="vertical-align:top"> |
 
 ## Unit 02 CSS and Bootstrap Responsive Portfolio
 
