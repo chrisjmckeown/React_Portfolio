@@ -137,6 +137,21 @@ form .btn-primary:hover {
         /*40 top and bottom. 40 + 60 = 100 for sticky footer height  */
         margin-bottom: 100px; 
     }
+    /* social media div reductions*/
+    .footer .media{
+        height: 55px;
+        float: left;
+        margin-left:5px;
+    }
+    .footer .media a{
+        color: black;
+        font-size: 25px;
+        padding-left:5px;
+    }
+    .footer .media a:hover{
+        color: red;
+        font-size: 25px;
+    }
 }
 
 /* media query for 400 and smaller screens */
@@ -150,5 +165,20 @@ form .btn-primary:hover {
         /*20 top and bottom. 20 + 60 = 80 for sticky footer height  */
         margin-bottom: 80px; 
         width: 100%;
+    }
+    /* social media div reductions*/
+    .footer .media{
+        height: 55px;
+        float: left;
+        margin-left:5px;
+    }
+    .footer .media a{
+        color: black;
+        font-size: 15px;
+        padding-left:5px;
+    }
+    .footer .media a:hover{
+        color: red;
+        font-size: 15px;
     }
 }
