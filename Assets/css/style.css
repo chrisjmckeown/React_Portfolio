@@ -19,6 +19,22 @@ header .navbar-brand{
     font-weight: 800;
     font-family: 'Palatino', 'URW Palladio L', serif;
 }
+/* sub navigation */
+main .subnav {
+    float: right;
+    font-family: 'Palatino', 'URW Palladio L', serif;
+}
+main .subnav ul {
+    list-style-type: none;
+}
+main .subnav ul li {
+    display: inline-block;
+}
+main .subnav a {
+    color: teal;
+    text-decoration: none;
+}
+
 /* setting main styles */
 main h1{
     padding-left: 5px;
@@ -79,7 +95,7 @@ form .btn-primary:hover {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 60px; 
+    height: 65px; 
     line-height: 60px; 
     background-color: rgb(102, 102, 102);
     color:  rgb(108, 117, 125);
@@ -92,6 +108,22 @@ form .btn-primary:hover {
 .footer h2 {
     font-size: 20px;
     padding-top: 13px;
+}
+
+/* social media div */
+.footer .media{
+    height: 55px;
+    float: left;
+    margin-left:30px;
+}
+.footer .media a{
+    color: black;
+    font-size: 30px;
+    padding-left:10px;
+}
+.footer .media a:hover{
+    color: red;
+    font-size: 30px;
 }
 
 /* media query for 768 and smaller screens */
