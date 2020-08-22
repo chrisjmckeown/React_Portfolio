@@ -1,18 +1,21 @@
-# BC_Week_02_Assignment
+# Portfolio
 
 * [Description](#Description)
-* [Unit 02 CSS and Bootstrap Responsive Portfolio](#Unit-02-CSS-and-Bootstrap-Responsive-Portfolio)
-* [Directions](#Directions)
-* [Hints](#Hints)
-* [Minimum Requirements](#Minimum-Requirements)
-* [Bonus](#Bonus)
+* [Technologies Utilized](#Technologies-Utilized)
+* [Portfolio Link](#Portfolio-Link)
+* [Contact](#Contact)
 
 ## Description
-* Assignment number two. 
-* Week number 2 of 24.
-* Please find link here: <a href="https://chrisjmckeown.github.io/BC_Week_02_CSS_and_Bootstrap_Responsive/" target="_blank">BC Week 02 CSS and Bootstrap Responsive</a>
+My Portfolio is a contains 3 pages, About Me, Portfolio and Contact.
 
-The task set (outlined in full below) was to put our knowledge of bootstrap and responsive websites to the test. We were provides a series of images; About Me, Portfolio, and Contact pages to replicate. They must also respond to various device widths, 992, 768 and 400.
+* About Me is a personal Bio including About, Career and Hobbies.
+   * Career contains links to personal company webpage and technologies utilized.
+   * About Me contains links to Hobby pages.
+* Portfolio some images of recently completed 3D prints.
+* Contact, a mockup contact page.
+* Footer contains links to media links, linkedin, twitter, facebook, and github.
+
+Examples of the pages prior to personalization.
 
 | 992 wide screens and wider  | 768 wide screens and wider | 400 wide screens and wider |
 | ------------- | ------------- | ------------- |
@@ -20,58 +23,21 @@ The task set (outlined in full below) was to put our knowledge of bootstrap and 
 | <img src="Assets/Images/992-portfolio.png" alt="Portfolio 992" width="150" vertical-align="text-top" style="vertical-align:top">  | <img src="Assets/Images/768-portfolio.png" alt="Portfolio 768" width="100" vertical-align="text-top" style="vertical-align:top">  | <img src="Assets/Images/400-portfolio.png" alt="Portfolio 400" width="50" vertical-align="text-top" style="vertical-align:top">  |
 | <img src="Assets/Images/992-contact.png" alt="Contact 992" width="150" vertical-align="text-top" style="vertical-align:top">  | <img src="Assets/Images/768-contact.png" alt="Contact 768" width="100" vertical-align="text-top" style="vertical-align:top">  | <img src="Assets/Images/400-contact.png" alt="Contact 400" width="50" vertical-align="text-top" style="vertical-align:top"> |
 
-## Unit 02 CSS and Bootstrap Responsive Portfolio
+## Technologies Utilized
 
-Responsive design ensures that web applications render well on a variety of devices and window or screen sizes. As a developer, you will likely be asked to create a mobile-first application or add responsive design to an existing application. 
+The pages use responsive design to ensure that the pages render well on a variety of devices and window or screen sizes; 992, 768 and 400. 
 
+The page use the Bootstrap CSS Framework and show case a navbar, and responsive layout and images.
 
-## Directions
+Primary technologies:
+* Bootstrap 4.5.2
+* HTML-5
+* CSS-3
 
-First, you will use the Bootstrap CSS Framework to create a mobile responsive portfolio. How do you deliver this? Here are some guidelines:
+## Portfolio Link
 
-* Create the following files files: `index.html`, `portfolio.html` and `contact.html`.
+* Please find my portfolio page here: <a href="https://chrisjmckeown.github.io/BC_Week_02_CSS_and_Bootstrap_Responsive/" target="_blank">CSS and Bootstrap Responsive</a>
 
-* Using Bootstrap, develop your portfolio site with the following items:
+## Contact
 
-   * A navbar
-
-   * A responsive layout
-
-   * Responsive images
-
-* The Bootstrap portfolio should minimize the use of media queries.
-
-* Screenshots are provided as a reference in the `Assets/Images` folder. Your app does not need to be _exactly_ like the images. Use Bootstrap to create a similar, responsive layout.
-
-### Hints
-
-* Use Bootstrap's grid system (containers, rows, and columns).
-
-* On an `xs` screen, content should take up the entire screen. On `sm` and larger screens, you should have some margins on the left and right sides of the screen. Check out various sites on your mobile device vs. your computer to see examples of these differences.
-
-* Use an HTML validation service to ensure that each page has valid HTML.
-
-### Minimum Requirements
-
-* Functional, deployed application
-
-* GitHub repository with README describing the project
-
-* Navbar must be consistent on each page.
-
-* Navbar on each page must contain links to Home/About, Contact, and Portfolio pages.
-
-* All links must work.
-
-* Must use semantic html.
-
-* Each page must have valid and correct HTML. (use a validation service)
-
-* Must contain your personalized information. (bio, name, images, links to social media, etc.)
-
-* Must properly utilize Bootstrap components and grid system.
-
-
-### Bonus
-
-* Using Bootstrap, make a sticky footer and use sub-rows and sub-columns on your portfolio site (**Hint:** Check out the Bootstrap documentation).
+* Please contact me at: chris.j.mckeown@hotmail.com
