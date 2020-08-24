@@ -36,7 +36,7 @@ Primary technologies:
 
 ## Portfolio Link
 
-* Please find my portfolio page here: <a href="https://chrisjmckeown.github.io/BC_Week_02_CSS_and_Bootstrap_Responsive/" target="_blank">CSS and Bootstrap Responsive</a>
+* Please find my portfolio page here: <a href="https://chrisjmckeown.github.io/Portfolio/" target="_blank">Portfolio</a>
 
 ## Contact
 
