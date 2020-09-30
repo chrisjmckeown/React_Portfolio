@@ -1,184 +1,134 @@
-/* enabler of sticky footer */
-html {
-    position: relative;
-    min-height: 100%;
-}
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+} */
+
+/********** Colour reference chart*********
+*************************** colour *******/ 
+:root {
+    --blue: rgb(78, 125, 155);
+    --light-blue: rgb(108, 167, 204);
+    --grey: rgb(161,164,167);
+    --green: rgb(79,173,67);
+  }
+
 /* setting body background */
-body{
-    width: 100%;
+html,body{
+    color: black;
     background-color: rgb(235, 235, 235);
     background-image: url("../Images/people.jpg");
     background-blend-mode: overlay;
     background-repeat: repeat;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
-/* overriding bootstrap navbar */
-header .navbar-brand{
-    background-color: teal;
-    color: #fff !important;
-    font-size: 40px;
-    font-weight: 800;
-    font-family: 'Palatino', 'URW Palladio L', serif;
+.header, .main, .footer { 
+	max-width: 1080px; 
+    margin: 0 auto; 
 }
-/* sub navigation */
-main .subnav {
-    float: right;
-    font-family: 'Palatino', 'URW Palladio L', serif;
+  
+/* styling the header */
+.header{
+    background-color:var(--blue);
+    flex: 0 1 auto;
+    width: 100%;
 }
-main .subnav ul {
+.banner{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    flex-wrap: wrap;
+}
+.logo{
+    margin:5px;
+    padding:2px;
+    background-color:white;
+    color: white;
+}
+.logo img{
+    height: 90px;
+}
+.name{
+    margin:5px;
+    padding:2px;
+    color: white;
+}
+.menu{
+    margin: 0 20px; 
+}
+.menu ul {
     list-style-type: none;
-}
-main .subnav ul li {
-    display: inline-block;
-}
-main .subnav a {
-    color: teal;
-    text-decoration: none;
-}
-
-/* setting main styles */
-main h1{
-    padding-left: 5px;
-    color: teal;
-    font-size: 70px;
-    font-weight: 800;
-    font-family: 'Palatino', 'URW Palladio L', serif;
-}
-main .contactImage {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+.menu li {
     float: left;
-    margin-right:10px;
-    margin-bottom:10px;
+    width: 150px;
 }
 
-/* setting form styles */
-main form {
-    margin-left:15px;
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+    background-color: var(--light-blue);
 }
-
-/* setting main container, lable and body styles */
-main .container{
-    /*80 top */
-    margin-top: 80px; 
-    /*80 left, locking the container to the left to reduce the bouncing around, personal choice */
-    margin-left: 80px; 
-    /*80 top and bottom. 80 + 60 = 140 for sticky footer height  */
-    margin-bottom: 140px; 
+.menu li a:hover:not(.active) {
+    background-color: var(--blue);
 }
-main .label{
-    padding-top: 40px;
-    padding-right: 40px;
-    padding-left: 40px;
+.menu .active {
+    background-color: var(--green);
 }
-main .body{
-    padding-right: 40px;
-    padding-bottom: 40px;
-    padding-left: 40px;
+/* styling the main */
+.main{  
+    flex: 1 1 auto;
+    background-color: white;
+    width: 100%;
 }
-
-/* overriding contact button */
-form .btn-primary,
-form .btn-primary:active,
-form .btn-primary:visited {
-    border-radius: 0;
-    background-color: teal;
+.about{
+    position: relative;
 }
-form .btn-primary:hover {
-    background-color: rgb(2, 66, 66);
-    transition: all 1s ease;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
+.photo{
+    float: left;
+}
+.brand-statement{
+    max-width: 600px;
+}
+  
+/* styling the footer */
+.footer{
+    flex: 0 1 auto;
+    width: 100%;
 }
 
 /* setting footer styles */
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 65px; 
-    line-height: 60px; 
-    background-color: rgb(102, 102, 102);
-    color:  rgb(108, 117, 125);
-    text-align: center;
+.footer .copyright-social-media {
+    margin: 0 auto;
+    height: 40px;
+    background-color:rgb(78, 125, 155);
+    display: flex;
+    justify-content: center; /* For horizontal alignment */
+    align-items: center; /* For vertical alignment */
 }
-.footer .green {
-    background-color: teal;
-    height: 5px;
-}
-.footer h2 {
-    font-size: 20px;
-    padding-top: 13px;
-}
-
+  
 /* social media div */
-.footer .media{
-    height: 55px;
-    float: left;
-    margin-left:30px;
+.footer, .footer .copyright-social-media a{
+    font-size: 20px;
+    color: white;
 }
-.footer .media a{
-    color: black;
-    font-size: 30px;
-    padding-left:10px;
+.footer .copyright-social-media a{
+    padding-left: 10px;
+    text-decoration: none;
 }
-.footer .media a:hover{
-    color: red;
-    font-size: 30px;
-}
-
-/* media query for 768 and smaller screens */
-/* reducing margins */
-@media(max-width:768px) {
-    main .container{
-        /*40 top */
-        margin-top: 40px; 
-        /*40 left, locking the container to the left to reduce the bouncing around, personal choice */
-        margin-left: 40px; 
-        /*40 top and bottom. 40 + 60 = 100 for sticky footer height  */
-        margin-bottom: 100px; 
-    }
-    /* social media div reductions*/
-    .footer .media{
-        height: 55px;
-        float: left;
-        margin-left:5px;
-    }
-    .footer .media a{
-        color: black;
-        font-size: 25px;
-        padding-left:5px;
-    }
-    .footer .media a:hover{
-        color: red;
-        font-size: 25px;
-    }
-}
-
-/* media query for 400 and smaller screens */
-/* Removing margin and setting width to full screen */
-@media(max-width:400px) {
-    main .container{
-        /*20 top */
-        margin-top: 20px; 
-        /*0 left, locking the container to the left to reduce the bouncing around, personal choice */
-        margin-left: 0px; 
-        /*20 top and bottom. 20 + 60 = 80 for sticky footer height  */
-        margin-bottom: 80px; 
-        width: 100%;
-    }
-    /* social media div reductions*/
-    .footer .media{
-        height: 55px;
-        float: left;
-        margin-left:5px;
-    }
-    .footer .media a{
-        color: black;
-        font-size: 15px;
-        padding-left:5px;
-    }
-    .footer .media a:hover{
-        color: red;
-        font-size: 15px;
-    }
+.footer .copyright-social-media a:hover{
+    color: var(--green);
 }
