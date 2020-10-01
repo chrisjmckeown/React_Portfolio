@@ -5,6 +5,7 @@
     --light-blue: rgb(108, 167, 204);
     --grey: rgb(161,164,167);
     --green: rgb(79,173,67);
+    --title: rgb(195, 110, 41);
   }
 
 /* setting body background */
@@ -44,7 +45,8 @@ html,body{
     color: white;
 }
 .logo img{
-    height: 90px;
+    width: 250px;
+    height: 55px;
 }
 .name{
     margin:5px;
@@ -62,9 +64,8 @@ html,body{
   }
 .menu li {
     float: left;
-    width: 150px;
+    width: 130px;
 }
-
 .menu li a {
     display: block;
     color: white;
@@ -86,7 +87,6 @@ html,body{
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 }
 .main-body{
@@ -96,6 +96,7 @@ html,body{
 }
 .title{
     text-align: center;
+    background-color: var(--title);
 }
 /* Home/about page styles */
 .photo{
@@ -104,12 +105,6 @@ html,body{
 .photo img{
     width: 300px;
     height: 300px;
-}
-.brand-statement{
-    max-width: 600px;
-}
-.about{
-    max-width: 600px;
 }
 /* Contact page styles */
 .form-group{
@@ -158,7 +153,51 @@ html,body{
 .details a:hover{
     color: var(--green);
 }
-  
+
+/* portfolio media div */
+.portfolio li, .kiwicodes li{
+    padding-bottom: 10px;
+}
+.portfolio-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfolio {
+    margin:20px;
+    padding:20px;
+    width: 450px;
+}
+.portfolio img{
+    height: 250px;
+    width: 380px;
+    border: 1px solid var(--blue);
+}
+.zoom{
+    text-align: center;
+    padding: 0px 0px;
+    transition: transform .2s; 
+    margin: 0 auto;
+}
+.zoom:hover {
+    transform: scale(2); 
+}
+
+.hobby-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.hobby-image {
+    width: 450px;
+}
+
+.hobby-image img {
+    width: 350px;
+    height: 350px;
+}
+
 /* styling the footer */
 .footer{
     flex: 0 1 auto;
@@ -187,18 +226,96 @@ html,body{
 .footer .copyright-social-media a:hover{
     color: var(--green);
 }
+/* media query for 768 and smaller screens */
+/* reducing margins */
+@media(max-width:768px) {
+    .header .name h1{
+        margin: 2px;
+    } 
+    .logo img{
+        width: 150px;
+        height: 35px;
+    }
+    .portfolio-container{
+        padding: 10px;
+        margin: 0;
+        width: 650px;
+    }
+    .portfolio {
+        margin:0px;
+        padding:0px;
+        width: 650px;
+    }
+    /* social media div */
+    .footer, .footer .copyright-social-media a{
+        font-size: 15px;
+        color: white;
+    }
+    .hobby-image {
+        width: 300px;
+    }
+    
+    .hobby-image img {
+        width: 290px;
+        height: 290px;
+    }
+}
 
-.portfolio img{
-    height: 250px;
-    width: 400px;
-    border: 1px solid var(--blue);
+/* media query for 400 and smaller screens */
+/* Removing margin and setting width to full screen */
+@media(max-width:650px) {
+    html,body{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .main-body, .portfolio-container{
+        width: 95%;
+    }
+    .portfolio{
+        width: 100%;
+    }
+    .zoom img{
+        width: 300px;
+    }
+    .zoom:hover {
+        transform: none; 
+    }
+    .header .name h1{
+        margin: 2px;
+        font-size: 1.3rem;
+    } 
+    .logo img{
+        display: none;
+    }
+    .title h2 {
+        font-size: 1rem;
+    }
+    .menu li {
+        font-size: .7rem;
+        float: left;
+        width: 90px;
+        height: 21px;
+    }
+    .portfolio-container{
+        padding: 10px;
+        margin: 0;
+    }
+    .portfolio {
+        margin:0px;
+        padding:0px;
+    }
+    /* social media div */
+    .footer, .footer .copyright-social-media a{
+        font-size: 15px;
+        color: white;
+    }
+    .hobby-image {
+        width: 300px;
+    }
+    
+    .hobby-image img {
+        width: 290px;
+        height: 290px;
+    }
 }
-  
-.zoom{
-    padding: 50px;
-    transition: transform .2s; /* Animation */
-    margin: 0 auto;
-}
-.zoom:hover {
-    transform: scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  }
