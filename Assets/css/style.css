@@ -45,7 +45,8 @@ html,body{
     color: white;
 }
 .logo img{
-    height: 90px;
+    width: 250px;
+    height: 55px;
 }
 .name{
     margin:5px;
@@ -65,7 +66,6 @@ html,body{
     float: left;
     width: 130px;
 }
-
 .menu li a {
     display: block;
     color: white;
@@ -87,7 +87,6 @@ html,body{
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 }
 .main-body{
@@ -106,12 +105,6 @@ html,body{
 .photo img{
     width: 300px;
     height: 300px;
-}
-.brand-statement{
-    max-width: 600px;
-}
-.about{
-    max-width: 600px;
 }
 /* Contact page styles */
 .form-group{
@@ -232,4 +225,97 @@ html,body{
 }
 .footer .copyright-social-media a:hover{
     color: var(--green);
+}
+/* media query for 768 and smaller screens */
+/* reducing margins */
+@media(max-width:768px) {
+    .header .name h1{
+        margin: 2px;
+    } 
+    .logo img{
+        width: 150px;
+        height: 35px;
+    }
+    .portfolio-container{
+        padding: 10px;
+        margin: 0;
+        width: 650px;
+    }
+    .portfolio {
+        margin:0px;
+        padding:0px;
+        width: 650px;
+    }
+    /* social media div */
+    .footer, .footer .copyright-social-media a{
+        font-size: 15px;
+        color: white;
+    }
+    .hobby-image {
+        width: 300px;
+    }
+    
+    .hobby-image img {
+        width: 290px;
+        height: 290px;
+    }
+}
+
+/* media query for 400 and smaller screens */
+/* Removing margin and setting width to full screen */
+@media(max-width:650px) {
+    html,body{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .main-body, .portfolio-container{
+        width: 95%;
+    }
+    .portfolio{
+        width: 100%;
+    }
+    .zoom img{
+        width: 300px;
+    }
+    .zoom:hover {
+        transform: none; 
+    }
+    .header .name h1{
+        margin: 2px;
+        font-size: 1.3rem;
+    } 
+    .logo img{
+        display: none;
+    }
+    .title h2 {
+        font-size: 1rem;
+    }
+    .menu li {
+        font-size: .7rem;
+        float: left;
+        width: 90px;
+        height: 21px;
+    }
+    .portfolio-container{
+        padding: 10px;
+        margin: 0;
+    }
+    .portfolio {
+        margin:0px;
+        padding:0px;
+    }
+    /* social media div */
+    .footer, .footer .copyright-social-media a{
+        font-size: 15px;
+        color: white;
+    }
+    .hobby-image {
+        width: 300px;
+    }
+    
+    .hobby-image img {
+        width: 290px;
+        height: 290px;
+    }
 }
