@@ -4,95 +4,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- linking getbootstrap  -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!-- linking project css file -->
     <link rel="stylesheet" type="text/css" href="./Assets/css/style.css">
-    <!-- script for social media -->
     <script src="https://kit.fontawesome.com/0f27892f85.js" crossorigin="anonymous"></script>
-    <title>Portfolio</title>
+    <title>Chris Mckeown</title>
 </head>
 
 <body>
     <!-- Semantic header -->
-    <header>
-        <!-- Semantic navigation using bootstrap -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <span class="navbar-brand mb-0 h1">Chris Mckeown</span>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
-                    </li>
-                </ul>
+    <header class="header">
+        <div class="banner">
+            <div class="name">
+                <h1>Chris Mckeown - Portfolio</h1>
             </div>
-        </nav>
+            <div class="logo"><img src="./Assets/Images/logo_header.png" alt="KiwiCodes Logo"></div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a class="active" href="portfolio.html">Portfolio</a></li>
+                <li><a href="architecture.html">Architecture</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </header>
     <!-- Semantic main body -->
-    <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-lg-8 bg-white body">
-                    <h1>Portfolio</h1>
+    <main class="main">
+        <section class="main-body">
+            <section class="portfolio">
+                <div class="title">
+                    <hr>
+                    <h2>BandEaR discover live artists</h2>
                     <hr>
                 </div>
-            </div>
-            <div class="row">
-                <!-- using md to force 2 columns at md size -->
-                <div class="col-md-4 col-lg-4 bg-white body">
-                    <img src="./Assets/Images/Printer1.JPEG" alt="Un-boxing" title="Un-boxing" class="img-thumbnail"
-                        width="350" height="350">
+                <div>
+                    <p>A awsome app that allows you to search by band name, preview their music and see all upcoming events..</p>
+                    <p>Please find BandEaR page here:
+                        <a target="_blank" href="https://chrisjmckeown.github.io/BandEaR_Discover_live_artists/">BandEaR</a></p>
+                    <p>Please find BandEaR git repo here: 
+                        <a target="_blank" href="https://github.com/chrisjmckeown/BandEaR_Discover_live_artists">BandEaR</a></p>
                 </div>
-                <div class="col-md-4 col-lg-4 bg-white body">
-                    <img src="./Assets/Images/Printer2.JPEG" alt="Setup and tests complete"
-                        title="Setup and tests complete" class="img-thumbnail" width="350" height="350">
+                <div class="zoom">
+                    <img class="portfolio-images" src="./Assets/Images/bandear.png"
+                        alt="BandEaR discover live artists">
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-lg-4 bg-white body">
-                    <img src="./Assets/Images/Printer3.JPEG" alt="Bubblebee cookie cutter"
-                        title="Bubblebee cookie cutter" class="img-thumbnail" width="350" height="350">
+            </section>
+            <section class="portfolio">
+                <div class="title">
+                    <hr>
+                    <h2>Weather Dashboard</h2>
+                    <hr>
                 </div>
-                <div class="col-md-4 col-lg-4 bg-white body">
-                    <img src="./Assets/Images/Printer4.JPEG" alt="Toothpaste extractor" title="Toothpaste extractor"
-                        class="img-thumbnail" width="350" height="350">
+                <div>
+                    <p>This website provides access to current and future weather conditions.</p>
+                    <p>Please find Weather Dashboard page here:
+                        <a target="_blank" href="https://chrisjmckeown.github.io/Weather_Dashboard/">Weather Dashboard</a></p>
+                    <p>Please find Weather Dashboard git repo here: 
+                        <a target="_blank" href="https://github.com/chrisjmckeown/Weather_Dashboard">Weather Dashboard</a></p>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-lg-4 bg-white body">
-                    <img src="./Assets/Images/Printer5.JPEG" alt="Baby shark do do do" title="Baby shark do do do"
-                        class="img-thumbnail" width="350" height="350">
+                <div class="zoom">
+                    <img class="portfolio-images" src="./Assets/Images/weather-dashboard.png"
+                        alt="Weather Dashboard">
                 </div>
-                <div class="col-md-4 col-lg-4 bg-white body">
+            </section>
+            <section class="portfolio">
+                <div class="title">
+                    <hr>
+                    <h2>Code Quiz</h2>
+                    <hr>
                 </div>
-            </div>
-        </div>
+                <div>
+                    <p>This is a timed multiple-choice quiz on JavaScript fundamentals that stores the highest scores.</p>
+                    <p>Please find Code Quiz page here:
+                        <a target="_blank" href="https://chrisjmckeown.github.io/Code_Quiz/">Code Quiz</a></p>
+                    <p>Please find Code Quiz git repo here: 
+                        <a target="_blank" href="https://github.com/chrisjmckeown/Code_Quiz">Code Quiz</a></p>
+                </div>
+                <div class="zoom">
+                    <img class="portfolio-images" src="./Assets/Images/code-quiz.png"
+                        alt="Code Quiz">
+                </div>
+            </section>
+            <section class="portfolio">
+                <div class="title">
+                    <hr>
+                    <h2>Password Generator</h2>
+                    <hr>
+                </div>
+                <div>
+                    <p>This app generates a random password based on a set of user criteria.</p>
+                    <p>Please find Password Generator page here:
+                        <a target="_blank" href="https://chrisjmckeown.github.io/Password_Generator/">Password Generator</a></p>
+                    <p>Please find Password Generator git repo here: 
+                        <a target="_blank" href="https://github.com/chrisjmckeown/Password_Generator">Password Generator</a></p>
+                </div>
+                <div class="zoom">
+                    <img class="portfolio-images" src="./Assets/Images/password-generator.png"
+                        alt="Password Generate">
+                </div>
+            </section>
+            <section class="portfolio">
+                <div class="title">
+                    <hr>
+                    <h2>Work Day Scheduler</h2>
+                    <hr>
+                </div>
+                <div>
+                    <p>A simple calendar application that allows the you to save events for each hour of the day.</p>
+                    <p>Please find Work Day Scheduler page here:
+                        <a target="_blank" href="https://chrisjmckeown.github.io/Work_Day_Scheduler/">Work Day Scheduler</a></p>
+                    <p>Please find Work Day Scheduler git repo here: 
+                        <a target="_blank" href="https://github.com/chrisjmckeown/Work_Day_Scheduler">Work Day Scheduler</a></p>
+                </div>
+                <div class="zoom">
+                    <img class="portfolio-images" src="./Assets/Images/work-day-scheduler.png"
+                        alt="Work Day Scheduler">
+                </div>
+            </section>
+            <section class="portfolio">
+                <div class="title">
+                    <hr>
+                    <h2>New Your Times Search</h2>
+                    <hr>
+                </div>
+                <div>
+                    <p>A seach page for New York Times articles.</p>
+                    <p>Please find New Your Times Search page here:
+                        <a target="_blank" href="https://github.com/chrisjmckeown/New_Your_Times_Search">New Your Times Search</a></p>
+                    <p>Please find New Your Times Search git repo here: 
+                        <a target="_blank" href="https://github.com/chrisjmckeown/New_Your_Times_Search">New Your Times Search</a></p>
+                </div>
+                <div class="zoom">
+                    <img class="portfolio-images" src="./Assets/Images/new-your-times-search.png"
+                        alt="New Your Times Search">
+                </div>
+            </section>
+        </section>
     </main>
-    <!-- Semantic main body -->
+    <!-- Semantic footer -->
     <footer class="footer">
-        <!-- div for green line -->
-        <div class="green"></div>
         <!-- div for social media -->
-        <div class="media">
+        <div class="copyright-social-media">
+            <span><a href="https://github.com/chrisjmckeown/Portfolio/blob/master/LICENSE" target="_blank">&#169;
+                    2020</a> - Chris Mckeown - </span>
             <a href="https://www.linkedin.com/in/chrisjmckeown/" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://twitter.com/ChrisMckeown6" target="_blank"><i class="fab fa-twitter-square"></i></a>
             <a href="https://www.facebook.com/christopher.j.mckeown.3" target="_blank"><i
                     class="fab fa-facebook-square"></i></a>
             <a href="https://github.com/chrisjmckeown" target="_blank"> <i class="fab fa-github-square"></i></a>
         </div>
-        <h2>&#169; Copyright - Chris Mckeown</h2>
     </footer>
     <!-- Javascripts to enable collapsible menu -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>

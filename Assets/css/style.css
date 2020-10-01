@@ -1,10 +1,3 @@
-/* *,
-*::before,
-*::after {
-  box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
-} */
-
 /********** Colour reference chart*********
 *************************** colour *******/ 
 :root {
@@ -17,15 +10,13 @@
 /* setting body background */
 html,body{
     color: black;
-    background-color: rgb(235, 235, 235);
-    background-image: url("../Images/people.jpg");
-    background-blend-mode: overlay;
-    background-repeat: repeat;
+    background: rgb(235, 235, 235) ;
     padding: 0;
     margin: 0;
     height: 100%;
     display: flex;
     flex-direction: column;
+    font-family: 'Muli', sans-serif;
 }
 .header, .main, .footer { 
 	max-width: 1080px; 
@@ -83,7 +74,7 @@ html,body{
     background-color: var(--light-blue);
 }
 .menu li a:hover:not(.active) {
-    background-color: var(--blue);
+    background-color: var(--green);
 }
 .menu .active {
     background-color: var(--green);
@@ -93,15 +84,79 @@ html,body{
     flex: 1 1 auto;
     background-color: white;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
 }
-.about{
-    position: relative;
+.main-body{
+    padding: 10px;
+    margin: 0;
+    width: 650px;
 }
+.title{
+    text-align: center;
+}
+/* Home/about page styles */
 .photo{
-    float: left;
+    text-align: center;
+}
+.photo img{
+    width: 300px;
+    height: 300px;
 }
 .brand-statement{
     max-width: 600px;
+}
+.about{
+    max-width: 600px;
+}
+/* Contact page styles */
+.form-group{
+    margin: 10px 0;
+}
+.contact label{
+    display: block;
+    margin: 10px 0;
+}
+.form-control{
+    width: 100%;
+    padding: 10px 0;
+}
+.btn {
+    width: 100%;
+    background-color: var(--blue);
+    color: white;
+    padding: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background-color: var(--green);
+  }
+  .feedback{
+      color: red;
+  }
+
+/* social media div */
+.details .copyright-social-media {
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; /* For horizontal alignment */
+    align-items: center; /* For vertical alignment */
+}
+.details a{
+    font-size: 50px;
+    color: var(--blue);
+}
+.details a{
+    padding-left: 10px;
+    text-decoration: none;
+}
+.details a:hover{
+    color: var(--green);
 }
   
 /* styling the footer */
@@ -132,3 +187,18 @@ html,body{
 .footer .copyright-social-media a:hover{
     color: var(--green);
 }
+
+.portfolio img{
+    height: 250px;
+    width: 400px;
+    border: 1px solid var(--blue);
+}
+  
+.zoom{
+    padding: 50px;
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
+}
+.zoom:hover {
+    transform: scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
