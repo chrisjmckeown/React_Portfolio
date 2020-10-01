@@ -4,91 +4,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- linking getbootstrap  -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!-- linking project css file -->
     <link rel="stylesheet" type="text/css" href="./Assets/css/style.css">
-    <!-- script for social media -->
     <script src="https://kit.fontawesome.com/0f27892f85.js" crossorigin="anonymous"></script>
-    <title>Portfolio</title>
+    <title>Chris Mckeown</title>
 </head>
 
 <body>
     <!-- Semantic header -->
-    <header>
-        <!-- Semantic navigation using bootstrap -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <span class="navbar-brand mb-0 h1">Chris Mckeown</span>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
-                    </li>
-                </ul>
+    <header class="header">
+        <div class="banner">
+            <div class="name">
+                <h1>Chris Mckeown - Portfolio</h1>
             </div>
-        </nav>
+            <div class="logo"><img src="./Assets/Images/logo_header.png" alt="KiwiCodes Logo"></div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="architecture.html">Architecture</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </header>
     <!-- Semantic main body -->
-    <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-lg-8 bg-white body">
-                    <h1>Contact</h1>
+    <main class="main">
+        <section class="main-body">
+            <section class="details">
+                <div class="title">
+                    <hr>
+                    <h2>Contact Details</h2>
                     <hr>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-8 col-lg-8 bg-white body">
-                    <form>
-                        <div class="form-group">
-                            <label for="exampleInputName">Name</label>
-                            <input class="form-control" id="exampleInputName" placeholder="Joe Blogs">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputEmail">Email</label>
-                            <input type="email" class="form-control" id="exampleInputEmail"
-                                placeholder="name@example.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlTextarea">Message</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea" rows="3"
-                                placeholder="Message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary submit">Submit</button>
-                    </form>
+                <div>Phone: (+61) 045072016</div>
+                <div>Email: chris.j.mckeown@hotmail.com</div>
+                <div class="copyright-social-media">
+                    <a href="https://www.linkedin.com/in/chrisjmckeown/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/ChrisMckeown6" target="_blank"><i
+                            class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.facebook.com/christopher.j.mckeown.3" target="_blank"><i
+                            class="fab fa-facebook-square"></i></a>
+                    <a href="https://github.com/chrisjmckeown" target="_blank"> <i class="fab fa-github-square"></i></a>
                 </div>
-            </div>
-        </div>
+            </section>
+            <section class="contact">
+                <div class="title">
+                    <hr>
+                    <h2>Send me a message</h2>
+                    <hr>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input class="form-control" id="name" placeholder="Joe Blogs">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn" id="submit">Submit</button>
+                    <p id="feedback"class="feedback"></p>
+                </form>
+            </section>
+        </section>
     </main>
-    <!-- Semantic main body -->
+    <!-- Semantic footer -->
     <footer class="footer">
-        <!-- div for green line -->
-        <div class="green"></div>
         <!-- div for social media -->
-        <div class="media">
+        <div class="copyright-social-media">
+            <span><a href="https://github.com/chrisjmckeown/Portfolio/blob/master/LICENSE" target="_blank">&#169;
+                    2020</a> - Chris Mckeown - </span>
             <a href="https://www.linkedin.com/in/chrisjmckeown/" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://twitter.com/ChrisMckeown6" target="_blank"><i class="fab fa-twitter-square"></i></a>
             <a href="https://www.facebook.com/christopher.j.mckeown.3" target="_blank"><i
                     class="fab fa-facebook-square"></i></a>
             <a href="https://github.com/chrisjmckeown" target="_blank"> <i class="fab fa-github-square"></i></a>
         </div>
-        <h2>&#169; Copyright - Chris Mckeown</h2>
     </footer>
     <!-- Javascripts to enable collapsible menu -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./Assets/JS/script.js"></script>
 </body>
 
 </html>
