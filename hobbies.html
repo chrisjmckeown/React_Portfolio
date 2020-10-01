@@ -23,6 +23,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="education.html">Education</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="kiwicodes.html">KiwiCodes</a></li>
                 <li><a href="architecture.html">Architecture</a></li>
                 <li><a class="active" href="hobbies.html">Hobbies</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -31,7 +32,7 @@
     </header>
     <!-- Semantic main body -->
     <main class="main">
-        <section class="main-body">
+        <div class="main-body">
             <section id="hobbies">
                 <div class="title">
                     <hr>
@@ -63,28 +64,39 @@
                     <h3>3D Printing</h3>
                     <p>I have recently purchased 3d Printer, check out the below works of art!</p>
                 </article>
-                <!-- using md to force 2 columns at md size -->
-                <div>
-                    <img src="./Assets/Images/Printer1.JPEG" class="img-thumbnail" width="350" height="350">
-                </div>
-                <div>
-                    <img src="./Assets/Images/Printer2.JPEG" alt="Setup and tests complete"
-                        title="Setup and tests complete" class="img-thumbnail" width="350" height="350">
-                </div>
-                <div>
-                    <img src="./Assets/Images/Printer3.JPEG" alt="Bubblebee cookie cutter"
-                        title="Bubblebee cookie cutter" class="img-thumbnail" width="350" height="350">
-                </div>
-                <div>
-                    <img src="./Assets/Images/Printer4.JPEG" alt="Toothpaste extractor" title="Toothpaste extractor"
-                        class="img-thumbnail" width="350" height="350">
-                </div>
-                <div>
-                    <img src="./Assets/Images/Printer5.JPEG" alt="Baby shark do do do" title="Baby shark do do do"
-                        class="img-thumbnail" width="350" height="350">
-                </div>
             </section>
-        </section>
+        </div>
+        <!-- using md to force 2 columns at md size -->
+        <div class="hobby-container">
+            <div class="hobby-image">
+                <div class="zoom">
+                    <img src="./Assets/Images/Printer1.JPEG"alt="Un-boxing"
+                    title="Un-boxing">
+                </div>
+            </div>
+            <div class="hobby-image">
+                <div class="zoom">
+                    <img src="./Assets/Images/Printer2.JPEG" alt="Setup and tests complete"
+                        title="Setup and tests complete">
+                </div>
+            </div>
+            <div class="hobby-image">
+                <div class="zoom">
+                    <img src="./Assets/Images/Printer3.JPEG" alt="Bubblebee cookie cutter"
+                        title="Bubblebee cookie cutter">
+                </div>
+            </div>
+            <div class="hobby-image">
+                <div class="zoom">
+                    <img src="./Assets/Images/Printer4.JPEG" alt="Toothpaste extractor" title="Toothpaste extractor">
+                </div>
+            </div>
+            <div class="hobby-image">
+                <div class="zoom">
+                    <img src="./Assets/Images/Printer5.JPEG" alt="Baby shark do do do" title="Baby shark do do do">
+                </div>
+            </div>
+        </div>
     </main>
     <!-- Semantic footer -->
     <footer class="footer">

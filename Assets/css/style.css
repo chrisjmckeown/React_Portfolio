@@ -5,6 +5,7 @@
     --light-blue: rgb(108, 167, 204);
     --grey: rgb(161,164,167);
     --green: rgb(79,173,67);
+    --title: rgb(195, 110, 41);
   }
 
 /* setting body background */
@@ -62,7 +63,7 @@ html,body{
   }
 .menu li {
     float: left;
-    width: 150px;
+    width: 130px;
 }
 
 .menu li a {
@@ -96,6 +97,7 @@ html,body{
 }
 .title{
     text-align: center;
+    background-color: var(--title);
 }
 /* Home/about page styles */
 .photo{
@@ -158,7 +160,51 @@ html,body{
 .details a:hover{
     color: var(--green);
 }
-  
+
+/* portfolio media div */
+.portfolio li, .kiwicodes li{
+    padding-bottom: 10px;
+}
+.portfolio-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfolio {
+    margin:20px;
+    padding:20px;
+    width: 450px;
+}
+.portfolio img{
+    height: 250px;
+    width: 380px;
+    border: 1px solid var(--blue);
+}
+.zoom{
+    text-align: center;
+    padding: 0px 0px;
+    transition: transform .2s; 
+    margin: 0 auto;
+}
+.zoom:hover {
+    transform: scale(2); 
+}
+
+.hobby-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.hobby-image {
+    width: 450px;
+}
+
+.hobby-image img {
+    width: 350px;
+    height: 350px;
+}
+
 /* styling the footer */
 .footer{
     flex: 0 1 auto;
@@ -187,18 +233,3 @@ html,body{
 .footer .copyright-social-media a:hover{
     color: var(--green);
 }
-
-.portfolio img{
-    height: 250px;
-    width: 400px;
-    border: 1px solid var(--blue);
-}
-  
-.zoom{
-    padding: 50px;
-    transition: transform .2s; /* Animation */
-    margin: 0 auto;
-}
-.zoom:hover {
-    transform: scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  }
