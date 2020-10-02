@@ -4,32 +4,31 @@
 * [Technologies Utilized](#Technologies-Utilized)
 * [Portfolio Link](#Portfolio-Link)
 * [Contact](#Contact)
+* [License](#License)
+
 
 ## Description
-My Portfolio is a contains 3 pages, About Me, Portfolio and Contact.
+My Portfolio is a contains pages, Home, Education, Portfolio, KiwiCodes, Architecture, Hobbies and Contact.
 
-* About Me is a personal Bio including About, Career and Hobbies.
-   * Career contains links to personal company webpage and technologies utilized.
-   * About Me contains links to Hobby pages.
-* Portfolio some images of recently completed 3D prints.
-* Contact, a mockup contact page.
+* Home contains personal information including Brand Statement, and Bio.
+* Education contains degrees and Resume.
+* Portfolio contains 7 IT projects, 6 web based and 1 .net.
+* KiwiCodes contains information about, and links to key webages and downloads.
+* Architecture contains a blurb about my architecture career to date. Plenty to add here.
+* Hobbies containssome images of recently completed 3D prints.
+* Contact contains personal media links and working contact section.
 * Footer contains links to media links, linkedin, twitter, facebook, and github.
 
 Examples of the pages prior to personalization.
 
-| 992 wide screens and wider  | 768 wide screens and wider | 400 wide screens and wider |
-| ------------- | ------------- | ------------- |
-| <img src="Assets/Images/992-index.png" alt="About Me 992" width="150" vertical-align="text-top" style="vertical-align:top">  | <img src="Assets/Images/768-index.png" alt="About Me 768" width="100" vertical-align="text-top" style="vertical-align:top">  | <img src="Assets/Images/400-index.png" alt="About Me 400" width="50" vertical-align="text-top" style="vertical-align:top">  |
-| <img src="Assets/Images/992-portfolio.png" alt="Portfolio 992" width="150" vertical-align="text-top" style="vertical-align:top">  | <img src="Assets/Images/768-portfolio.png" alt="Portfolio 768" width="100" vertical-align="text-top" style="vertical-align:top">  | <img src="Assets/Images/400-portfolio.png" alt="Portfolio 400" width="50" vertical-align="text-top" style="vertical-align:top">  |
-| <img src="Assets/Images/992-contact.png" alt="Contact 992" width="150" vertical-align="text-top" style="vertical-align:top">  | <img src="Assets/Images/768-contact.png" alt="Contact 768" width="100" vertical-align="text-top" style="vertical-align:top">  | <img src="Assets/Images/400-contact.png" alt="Contact 400" width="50" vertical-align="text-top" style="vertical-align:top"> |
+<img src="Assets/Images/400-contact.png" alt="Contact 400" width="50" vertical-align="text-top" style="vertical-align:top"> 
 
 ## Technologies Utilized
 
 The pages use responsive design to ensure that the pages render well on a variety of devices and window or screen sizes; 992, 768 and 400. 
 
-The page use the Bootstrap CSS Framework and show case a navbar, and responsive layout and images.
-
 Primary technologies:
+* Javascript
 * Bootstrap 4.5.2
 * HTML-5
 * CSS-3
@@ -41,3 +40,7 @@ Primary technologies:
 ## Contact
 
 * Please contact me at: chris.j.mckeown@hotmail.com
+
+## License
+
+* See license here: <a href="https://github.com/chrisjmckeown/Portfolio/blob/master/LICENSE" target="_blank">license agreement</a>
