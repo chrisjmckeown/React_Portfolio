@@ -21,7 +21,7 @@ My Portfolio is a contains pages, Home, Education, Portfolio, KiwiCodes, Archite
 
 Examples of the pages prior to personalization.
 
-<img src="Assets/Images/400-contact.png" alt="Contact 400" width="50" vertical-align="text-top" style="vertical-align:top"> 
+<img src="Assets/Images/Example.gif" alt="Demo of Portfolio" width="700"> 
 
 ## Technologies Utilized
 
