@@ -198,6 +198,18 @@ html,body{
     height: 350px;
 }
 
+.technologies-used{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.badges{
+    background-color: var(--green);
+    padding: 5px;
+    margin: 5px;
+}
+
 /* styling the footer */
 .footer{
     flex: 0 1 auto;
