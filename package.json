@@ -1,0 +1,21 @@
+{
+  "name": "react_portfolio",
+  "version": "1.0.0",
+  "description": "![GitHub stars](https://img.shields.io/github/stars/chrisjmckeown/Portfolio?style=social)![GitHub forks](https://img.shields.io/github/forks/chrisjmckeown/Portfolio?style=social)![GitHub watchers](https://img.shields.io/github/watchers/chrisjmckeown/Portfolio?style=social)![GitHub followers](https://img.shields.io/github/followers/chrisjmckeown?style=social)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisjmckeown/React_Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisjmckeown/React_Portfolio/issues"
+  },
+  "homepage": "https://github.com/chrisjmckeown/React_Portfolio#readme"
+}
