@@ -26,7 +26,7 @@ My Portfolio is a contains pages, Home, Education, Portfolio, KiwiCodes, Archite
 
 Examples of the pages prior to personalization.
 
-<img src="Assets/Images/Example.gif" alt="Demo of Portfolio" width="700"> 
+<img src="client/Public/Assets/Images/Example.gif" alt="Demo of Portfolio" width="700"> 
 
 ## Technologies Utilized
 ![GitHub language count](https://img.shields.io/github/languages/count/chrisjmckeown/Portfolio?style=flat-square)![GitHub top language](https://img.shields.io/github/languages/top/chrisjmckeown/Portfolio?style=flat-square)
@@ -34,6 +34,7 @@ Examples of the pages prior to personalization.
 The pages use responsive design to ensure that the pages render well on a variety of devices and window or screen sizes; 992, 768 and 400. 
 
 Primary technologies:
+* React
 * Javascript
 * Bootstrap 4.5.2
 * HTML-5
@@ -41,7 +42,7 @@ Primary technologies:
 
 ## Portfolio Link
 
-* Please find my portfolio page here: <a href="https://chrisjmckeown.github.io/Portfolio/" target="_blank">Portfolio</a>
+* Please find my portfolio page here: <a href="https://fathomless-beach-66885.herokuapp.com/" target="_blank">Portfolio</a>
 
 ## Contact
 
